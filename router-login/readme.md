@@ -10,11 +10,17 @@ json-server —watch <filename.json>
 1.更新成功 CMD DONE
 
 2.Login in ， Sign in， Sign up ， Home(router)，navibar bottom DONE
-    1.這個專題先做以 router 為主的 HOME ABOUT PAGE 作為本周的終結
-    2.除非按下登入建，否則不能觀看
-    3.將原本的模板簡化，即可結束
-
+    1.這個專題先做以 router 為主的 HOME ABOUT PAGE 作為本周的終結 done
+    2.以responsive navibar sidebar為導覽列，這個化為可能的機會比較高
+    
+    
 3.connect with JWT video Preparing
+
+3.1 除非按下登入建，否則不能觀看
+
+3.2 將原本的模板簡化，即可結束
+
+3.3 make account storage in localstorage
 
 4.ADD Loading animation
 
