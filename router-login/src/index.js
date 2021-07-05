@@ -4,11 +4,15 @@ import './index.css';
 import App from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
+//建立基本路由
+import { BrowserRouter, Switch } from 'react-router-dom';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+      <Switch>
+        <App />
+      </Switch>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 

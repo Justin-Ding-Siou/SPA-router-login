@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import { Route } from 'react-router-dom';
 import './App.css';
+import { Home, Books, Electronics } from './pages';
+import { Navbar } from './components';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+
+class App extends Component {
+  render() {
+    return (
+      <div className="container">
+
+      <Navbar /> 
+      {/* The corresponding component will show here if the current URL matches the path */}
+      <Route path="/" exact component={Home} />
+      <Route path="/books" component={Books} />
+      <Route path="/electronics" component={Electronics} />
     </div>
-  );
+    );
+  }
 }
 
 export default App;
