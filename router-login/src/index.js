@@ -10,7 +10,7 @@ import { BrowserRouter, Switch } from 'react-router-dom';
 ReactDOM.render(
   <BrowserRouter>
       <Switch>
-        <App />
+        <App></App>
       </Switch>
   </BrowserRouter>,
   document.getElementById('root')
